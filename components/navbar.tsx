@@ -5,7 +5,7 @@ import Image from "next/image";
 const NavBar = () => {
   return (
     <nav className="bg-black text-white dark:bg-white dark:text-black">
-      <div className="container w-full px-4 py-3 flex justify-between items-center">
+      <div className="w-full px-4 py-3 flex justify-between items-center">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
           <SidebarTrigger />
@@ -27,9 +27,9 @@ const NavBar = () => {
           ))}
         </div>
         {/* Avatar */}
-        <div className="rounded-full w-8 h-8 overflow-hidden">
+        <div className="rounded-full w-8 h-8 mr-4 overflow-hidden">
           <Image
-            src="/vercel.svg"
+            src="/avatar.jpeg"
             alt="Profile Picture"
             width={96}
             height={96}
