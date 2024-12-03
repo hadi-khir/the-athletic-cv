@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Card, CardHeader, CardContent, CardFooter, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
+import Link from "next/link";
 
 const Experience = () => {
     const experiences = [
@@ -35,23 +38,19 @@ const Experience = () => {
     ];
 
     return (
-        <section
-            id="experience"
-            className="w-9/10 mt-16 m-8 grid grid-cols-1"
-        >
+        <div id='experience'>
             <h2 className="text-lg font-bold uppercase tracking-wider">
                 Experience
             </h2>
             {experiences.map(({ company, role, duration, imageSrc }, index) => (
-
-                <div className="grid grid-cols-2 gap-8 md:gap-16 m-8 items-center">
-                    <div key={index} className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-2 flex justify-between gap-16 md:gap-64 m-4 mt-16">
+                    <div key={index} className="grid grid-cols-1 gap-1">
                         <span className="font-bold text-lg">{company}</span>
                         <span className="">{duration}</span>
                         <p>{role}</p>
                     </div>
-
                     <Image
+                        className="text-right"
                         src={imageSrc}
                         alt="Company Logo"
                         width={150}
@@ -59,7 +58,7 @@ const Experience = () => {
                     />
                 </div>
             ))}
-        </section>
+        </div>
     );
 };
 

@@ -21,7 +21,7 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="w-full mt-16 ml-8 grid grid-cols-1 md:grid-cols-[25%_75%] gap-16"
+            className="w-9/10 mt-16 ml-8 grid grid-cols-1 md:grid-cols-[20%_70%] gap-8"
         >
             <h2 className="text-lg font-bold uppercase tracking-wider">
                 Skills
