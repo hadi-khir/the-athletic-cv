@@ -12,20 +12,20 @@ const PickSix = () => {
         {
             id: 2,
             title: 'Josh Allen, Saquon Barkley, Lamar Jackson and a sizzling MVP race: Sando',
-            description: ' Allen is the favorite. Barkley has a compelling case to break the RB MVP drought. But Jackson stands apart, despite...',
+            description: 'Allen is the favorite. Barkley has a compelling case to break the RB MVP drought. But Jackson stands apart, despite...',
             imageSrc: 'https://via.placeholder.com/150',
         },
         {
             id: 3,
             title: 'Josh Allen, Saquon Barkley, Lamar Jackson and a sizzling MVP race: Sando',
-            description: ' Allen is the favorite. Barkley has a compelling case to break the RB MVP drought. But Jackson stands apart, despite...',
+            description: 'Allen is the favorite. Barkley has a compelling case to break the RB MVP drought. But Jackson stands apart, despite...',
             imageSrc: 'https://via.placeholder.com/150',
         },
     ]
 
     return (
         <div id='pick-six'>
-            <h2 className="text-xl font-bold">Hadi's Pick Six (About Me)</h2>
+            <h2 className="text-xl font-bold">Hadi&apos;s Pick Six (About Me)</h2>
             {
                 data.map((story, index) => {
                     if (index === 0) {
@@ -70,7 +70,7 @@ const PickSix = () => {
                     }
 
                     return (
-                        <div className="block grid grid-cols-1 gap-2 mt-4">
+                        <div key={story.id} className="block grid grid-cols-1 gap-2 mt-4">
                             {/* Content Section */}
                             <div className="m-4">
                                 <div>
