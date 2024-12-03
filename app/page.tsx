@@ -1,4 +1,5 @@
 import Background from "@/components/background";
+import Experience from "@/components/experience";
 import NavBar from "@/components/navbar";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <NavBar />
       <Background />
+      <Experience />
     </>
   );
 }

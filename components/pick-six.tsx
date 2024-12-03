@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const PickSix = () => {
 
     const data = [
@@ -54,10 +56,11 @@ const PickSix = () => {
                                     </div>
                                 </div>
                                 <div className="relative">
-                                    <img
+                                    <Image
                                         src={story.imageSrc}
                                         alt="Article Thumbnail"
-                                        className="h-full w-full object-cover"
+                                        height={500}
+                                        width={500}
                                     />
                                     <div className="absolute top-2 left-2 bg-black text-white text-xs font-bold px-2 py-1 rounded">
                                         PICK 6

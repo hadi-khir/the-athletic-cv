@@ -29,7 +29,7 @@ const NavBar = () => {
         {/* Avatar */}
         <div className="rounded-full w-8 h-8 mr-4 overflow-hidden">
           <Image
-            src="/avatar.jpeg"
+            src="/profile.jpeg"
             alt="Profile Picture"
             width={96}
             height={96}
