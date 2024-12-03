@@ -24,14 +24,13 @@ const PickSix = () => {
     ]
 
     return (
-
         <div id='background'>
             <h2 className="text-xl font-bold">Hadi's Pick Six (About Me)</h2>
             {
                 data.map((story, index) => {
                     if (index === 0) {
                         return (
-                            <div className="grid grid-cols-2 gap-2 mt-4">
+                            <div key={story.id} className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
                                 <div className="m-4">
                                     <div>
                                         <h2 className="text-xl font-bold">
