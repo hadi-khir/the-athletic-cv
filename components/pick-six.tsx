@@ -5,7 +5,7 @@ const PickSix = () => {
             id: 1,
             title: 'Josh Allen, Saquon Barkley, Lamar Jackson and a sizzling MVP race: Sando',
             description: 'Allen is the favorite. Barkley has a compelling case to break the RB MVP drought. But Jackson stands apart, despite...',
-            imageSrc: 'https://via.placeholder.com/150',
+            imageSrc: '/sap-49ers.jpeg',
         },
         {
             id: 2,
