@@ -24,7 +24,7 @@ const PickSix = () => {
     ]
 
     return (
-        <div id='background'>
+        <div id='pick-six'>
             <h2 className="text-xl font-bold">Hadi's Pick Six (About Me)</h2>
             {
                 data.map((story, index) => {

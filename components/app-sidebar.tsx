@@ -2,14 +2,20 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarGroup,
   SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import Image from "next/image"
+import Link from "next/link";
+import { NavLinks as navLinks } from "@/lib/utils";
 
 export function AppSidebar() {
+
+
   return (
-    <Sidebar>
+    <Sidebar className="flex items-center">
       <SidebarHeader className="bg-stone-900">
         <Image
           className="text-right"
@@ -20,8 +26,17 @@ export function AppSidebar() {
         />
       </SidebarHeader>
       <SidebarContent className="bg-stone-900">
-        <SidebarGroup />
-        <SidebarGroup />
+        <SidebarMenu>
+          {navLinks.map((link) => (
+            <SidebarMenuItem key={link.id}>
+              <SidebarMenuButton asChild>
+                <Link href={link.href}>
+                  <span className="text-white text-lg">{link.text}</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          ))}
+        </SidebarMenu>
       </SidebarContent>
       <SidebarFooter />
     </Sidebar>

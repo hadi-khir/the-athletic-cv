@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SidebarTrigger } from "./ui/sidebar";
 import Image from "next/image";
+import { NavLinks as navLinks } from "@/lib/utils";
 
 const NavBar = () => {
   return (
@@ -12,16 +13,9 @@ const NavBar = () => {
       </div>
       {/* Middle Section: Links */}
       <div className="hidden md:flex space-x-6">
-        {[
-          "Premier League",
-          "Champions League",
-          "International Football",
-          "Tennis",
-          "Formula 1",
-          "Golf",
-        ].map((link) => (
-          <Link key={link} href={`/${link.toLowerCase().replace(" ", "-")}`}>
-            {link}
+        {navLinks.map((link) => (
+          <Link className="p-2 hover:bg-stone-600" key={link.id} href={link.href}>
+            <span>{link.text}</span>
           </Link>
         ))}
       </div>

@@ -17,8 +17,10 @@ export default function Home() {
         <span className="text-xl">View Full Resume</span>
         <FaArrowRight className="text-xl" />
       </Link>
-      <Skills />
-      <Footer />
+      <div className="w-full flex flex-col h-screen-min text-white bg-stone-900">
+        <Skills />
+        <Footer />
+      </div>
     </>
   );
 }

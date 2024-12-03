@@ -1,17 +1,17 @@
 interface Headline {
-        id: number,
-        text: string
+  id: number,
+  text: string
 }
 
 interface HeadlinePropType {
-    headlines: Headline[]
+  headlines: Headline[]
 }
 
-const Headlines = ({headlines}: HeadlinePropType) => {
+const Headlines = ({ headlines }: HeadlinePropType) => {
 
 
-    return (
-      <div id='headlines' className='hidden md:block' >
+  return (
+    <div id='headlines' className='hidden md:block pl-2' >
       <h2 className='font-bold text-md uppercase mb-4'>Headlines</h2>
       <ul className='space-y-3'>
         {headlines.map((line) => (
@@ -25,7 +25,7 @@ const Headlines = ({headlines}: HeadlinePropType) => {
         ))}
       </ul>
     </div>
-    )
+  )
 
 }
 
