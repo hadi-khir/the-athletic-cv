@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="bg-black text-white dark:bg-white dark:text-black">
+    <nav className="bg-stone-900 text-white">
       <div className="w-full px-4 py-3 flex justify-between items-center">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
           <SidebarTrigger />
-          <a className="text-2xl font-bold">The Athletic</a>
+          <a className="text-3xl font-bold">The Athletic</a>
         </div>
         {/* Middle Section: Links */}
         <div className="hidden md:flex space-x-6">
