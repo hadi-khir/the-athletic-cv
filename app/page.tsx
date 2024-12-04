@@ -1,3 +1,4 @@
+import BackToTop from "@/components/back-to-top";
 import Background from "@/components/background";
 import Career from "@/components/career";
 import Footer from "@/components/footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Skills />
         <Footer />
       </div>
+      <BackToTop />
     </>
   );
 }
