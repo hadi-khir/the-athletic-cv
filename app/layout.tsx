@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
-import {Port_Lligat_Slab} from 'next/font/google';
+import { Port_Lligat_Slab } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/next";
 
-const portLligatSlab = Port_Lligat_Slab({weight: '400', subsets: ['latin']})
+const portLligatSlab = Port_Lligat_Slab({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "The Athletic - Hadi",
@@ -27,6 +28,7 @@ export default function RootLayout({
             {children}
           </main>
         </SidebarProvider>
+        <Analytics />
       </body>
     </html>
   );
