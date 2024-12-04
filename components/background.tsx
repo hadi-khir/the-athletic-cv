@@ -19,7 +19,7 @@ const Background = () => {
     {
       id: 3,
       title: "Pets, photography & sports",
-      description: "In my spare time, I'll be with my cat Zaytoun, experimenting with different ways to play coffee, playing pickup basketball or out taking photos.",
+      description: "In my spare time, I'll be with my cat Zaytoun, continually striving to brew the best cup of coffee, playing pickup basketball or out taking photos.",
       imageSrc: "https://via.placeholder.com/150",
     },
   ];
