@@ -40,7 +40,7 @@ const Experience = () => {
                 Experience
             </h2>
             {experiences.map(({ company, role, duration, imageSrc }, index) => (
-                <div key={company} className="grid grid-cols-2 flex justify-between gap-16 md:gap-64 m-4 mt-16">
+                <div key={company} className="grid grid-cols-2 flex justify-between gap-16 lg:gap-64 m-4 mt-16">
                     <div key={index} className="grid grid-cols-1 gap-1">
                         <span className="font-bold text-lg">{company}</span>
                         <span className="">{duration}</span>

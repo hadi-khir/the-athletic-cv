@@ -48,7 +48,7 @@ const Projects = () => {
                                 key={project.id}
                                 href='https://exifdata.dev'
                                 target='_blank'>
-                                <div className='grid w-full items-center p-2 shadow-lg hover:shadow-xl'>
+                                <div className='grid w-9/10 items-center p-2 shadow-lg hover:shadow-xl'>
                                     <div className='grid items-center gap-2 mt-4'>
                                         <h2>{project.title}</h2>
                                         <p>{project.description}</p>
