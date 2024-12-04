@@ -20,7 +20,10 @@ const NavBar = () => {
         ))}
       </div>
       {/* Avatar */}
-      <div className="rounded-full w-8 h-8 mr-4 overflow-hidden">
+      <Link
+        className="rounded-full w-8 h-8 mr-4 overflow-hidden"
+        target="_blank"
+        href={"https://linkedin.com/in/hadi-khir"}>
         <Image
           src="/profile.jpeg"
           alt="Profile Picture"
@@ -28,7 +31,7 @@ const NavBar = () => {
           height={96}
           className="object-cover"
         />
-      </div>
+      </Link>
     </nav>
   );
 };
