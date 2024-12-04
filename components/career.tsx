@@ -7,7 +7,7 @@ const Career = () => {
 
         <section
             id="career"
-            className="w-9/10 m-8 mt-8 grid grid-cols-1 md:grid-cols-[55%_45%] lg:grid-cols-[65%-35%]"
+            className="m-8 mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-[55%_45%] lg:grid-cols-[65%-35%] gap-4"
         >
             <Experience />
             <Projects />
